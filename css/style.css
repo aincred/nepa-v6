@@ -1216,3 +1216,50 @@ footer .banner .b-contact svg{width:18px!important;height:18px!important}
 footer .banner .c-label{font-size:11px!important;letter-spacing:.4px}
 footer .banner .c-val{font-size:15px!important;font-weight:600;line-height:1.3}
 footer .banner .c-item{line-height:1.25}
+
+/* Add to your main stylesheet: styles for the header search section */
+.search-row { background: #f3f6fb; border-bottom: 1px solid #d5dce8; padding: 10px 0; }
+.search-row .wrap { display: flex; justify-content: flex-end; }
+.site-search { display: flex; width: 100%; max-width: 480px; }
+.ss-input {
+  flex: 1; min-width: 0; height: 42px; padding: 0 14px;
+  border: 2px solid #00205b; border-right: 0; border-radius: 4px 0 0 4px;
+  font: inherit; font-size: 16px; background: #fff; color: #111;
+}
+.ss-input:focus { outline: 3px solid #ffb703; outline-offset: 0; }
+.ss-btn {
+  display: inline-flex; align-items: center; gap: 6px; height: 42px; padding: 0 18px;
+  background: #00205b; color: #fff; border: 2px solid #00205b; border-radius: 0 4px 4px 0;
+  font: inherit; font-weight: 600; cursor: pointer;
+}
+.ss-btn:hover, .ss-btn:focus-visible { background: #0a3a8a; }
+.ss-btn:focus-visible { outline: 3px solid #ffb703; outline-offset: 2px; }
+@media (max-width: 640px) {
+  .search-row .wrap { justify-content: stretch; }
+  .site-search { max-width: none; }
+  .ss-btn span { display: none; }
+}
+
+/* Add to your main stylesheet: styles for the header search section (compact) */
+.search-row { background: #f3f6fb; border-bottom: 1px solid #d5dce8; padding: 4px 0; }
+.search-row .wrap { display: flex; justify-content: flex-end; }
+.site-search { display: flex; width: 100%; max-width: 300px; }
+.ss-input {
+  flex: 1; min-width: 0; height: 30px; padding: 0 10px;
+  border: 1px solid #00205b; border-right: 0; border-radius: 3px 0 0 3px;
+  font: inherit; font-size: 14px; background: #fff; color: #111;
+}
+.ss-input:focus { outline: 2px solid #ffb703; outline-offset: 0; }
+.ss-btn {
+  display: inline-flex; align-items: center; gap: 4px; height: 30px; padding: 0 10px;
+  background: #00205b; color: #fff; border: 1px solid #00205b; border-radius: 0 3px 3px 0;
+  font: inherit; font-size: 14px; font-weight: 600; cursor: pointer;
+}
+.ss-btn svg { width: 15px; height: 15px; }
+.ss-btn:hover, .ss-btn:focus-visible { background: #0a3a8a; }
+.ss-btn:focus-visible { outline: 2px solid #ffb703; outline-offset: 1px; }
+@media (max-width: 640px) {
+  .search-row .wrap { justify-content: stretch; }
+  .site-search { max-width: none; }
+  .ss-btn span { display: none; }
+}
